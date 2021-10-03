@@ -77,20 +77,28 @@ h3 {
 }
 
 .card {
-    display:inline-flex;
-    width: 28%;
-    justify-content: space-between;
-    margin: 0 2%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    max-width: 28%;
+    justify-content: center;
+    margin: 2% auto;
+    text-align: center;
+    outline: 2px dotted var(--sea-green);
+    outline-offset: -2px;
 }
 
+
+
 @media screen and (max-width: 768px) {
-    header,
-    main {
+
+    nav,
+    main, .card {
       flex-direction: column;
     }
   
-    section {
-      padding-right: 0;
+    img {
+      max-width: 50%;
     }
   
     aside {
