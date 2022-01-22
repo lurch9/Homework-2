@@ -1,9 +1,8 @@
 :root {
-    --sea-green: #659dbd;
-    --mute-brown: #bc986a;
+    --grey: #2c3531;
+    --dark-blue: #123C69;
     --cream: #FBEEC1;
-    --earth-green: #8d8741;
-    --muterbrown: #DAAD86;
+    --sea-green: #93E9BE;
 }
 
 * {
@@ -22,12 +21,15 @@ html {
 }
 
 img{
-    max-width: 65%;
+    max-width: 30%;
 
+}
+h1{
+    margin-bottom: 3%;
 }
 
 body {
-    background-color: var(--sea-green); 
+    background-color: var(--grey); 
     padding: 2%;
     margin:auto;
 }
@@ -37,14 +39,13 @@ header, footer {
     margin: auto;
     width:100%;
     justify-content: space-between;
-    background-color: var(--mute-brown);
+    background-color: var(--dark-blue);
     color: var(--cream);
 
 }
 nav ul{
     display: flex;
     justify-content: space-between;
-    background-color: var(--sea-green);
     padding: 1% 2%;
 }
 li {
@@ -52,50 +53,68 @@ li {
     font-size: 150%;
 }
 a{
-    color: var(--cream);
+    color: var(--dark-blue);
 
 }
 a:hover{
-    color:var(--mute-brown);
+    color:var(--sea-green);
 }
 
 
 section {
     padding: 10%;
-    border-left: 10px double var(--mute-brown);
+    border-left: 10px double var(--dark-blue);
+    border-right: 10px double var(--dark-blue);
     margin: 3%;
-    background-color: var(--earth-green);
-    border-radius:50%;
 }
 
 h3 {
     font-size: 90%;
 }
+.main {
+    padding: 1%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width:100%;
+    justify-content: space-between;
+    background-color: var(--dark-blue);
+    color: var(--cream);
+}
 
 .home-picture{
     display:block;
-    max-width: 35%;
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    border-radius:35%;
-    border-style:double;
+    border-left: 10px double var(--dark-blue);
+    border-right: 10px double var(--dark-blue);
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 35%;
+    
 }
 
 .card {
     display:flex;
     flex-wrap:wrap;
     flex-direction: row;
-    max-width: 28%;
     justify-content: center;
     margin: 2% auto;
+    max-width: 40%;
     text-align: center;
-    outline: 2px dotted var(--sea-green);
-    outline-offset: -2px;
-    background-image: linear-gradient(#7fb375, #7297A0)
+    background-color: #123C69;
+    font-size: 120%;
 }
 .card:hover{
-  box-shadow: inset 0px 0px 8px var(--sea-green), 0 0 15px var(--sea-green);
+  box-shadow: inset 0px 0px 8px var(--grey), 0 0 15px var(--grey);
+  max-width: 100%;
+}
+.work{
+    margin-left: 3%;
+    padding: 2%;
 }
 
 
