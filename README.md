@@ -10,5 +10,5 @@ This program acts as a portfolio page where interested parties can learn about m
 
 
 ## Link to deployed application
-https://lurch9.github.io/Homework-2/
+https://lurch9.github.io/PortfolioPage/
 
